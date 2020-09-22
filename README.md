@@ -1,1 +1,1 @@
-# scss-starter
+# Shoppers E-commrce Website Template
