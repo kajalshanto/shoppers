@@ -1,0 +1,127 @@
+.trending__products {
+    padding: 30px 0;
+
+    .section__title {
+        text-align: left !important;
+    }
+
+    .product {
+
+        img {
+            -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            img {
+                opacity: 0.3;
+            }
+
+            .product-overlay {
+                opacity: 1;
+
+                li {
+                    opacity: 1;
+                    -webkit-transform: none;
+                    transform: none;
+                }
+            }
+        }
+
+        .badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 999;
+        }
+
+        .badge-primary {
+            color: $white;
+            background-color: #dcb14a;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            border-radius: 0;
+            font-weight: 400;
+            padding: 0.35rem 0.5rem;
+        }
+
+        .badge-info {
+            color: $white;
+            background-color: #17a2b8;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            border-radius: 0;
+            font-weight: 400;
+            padding: 0.35rem 0.5rem;
+        }
+
+        .badge-danger {
+            color: $white;
+            background-color: #dc3545;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            border-radius: 0;
+            font-weight: 400;
+            padding: 0.35rem 0.5rem;
+        }
+
+        &-overlay {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            -ms-flex-pack: center;
+            justify-content: center;
+            padding: 1rem 0;
+            opacity: 0;
+            transition: all 0.3s;
+
+            ul {
+                li {
+                    transition: all 0.3s;
+
+                    &:first-of-type {
+                        -webkit-transform: translateX(-10px);
+                        transform: translateX(-10px);
+                        opacity: 0;
+                    }
+
+                    &:last-of-type {
+                        -webkit-transform: translateX(10px);
+                        transform: translateX(10px);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        &-view {
+            min-height: 20rem;
+        }
+
+        &__detail {
+            h6 {
+
+                a {
+                    font-size: 1.1rem;
+                    font-weight: 900;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: #dc3545;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.product-view {
+    min-height: 20rem;
+}

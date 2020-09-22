@@ -4,58 +4,115 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    padding: 20px 60px;
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
-    background-color: white;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    border-radius: 6px;
     box-sizing: border-box;
     cursor: pointer;
-    transition: all .3s ease;
-
-    @media (max-width: 768) {
-        display: block;
-    }
 
     &:hover,
     &:active,
     &:focus {
         outline: none;
         border: none;
-        //transform: scale(1.01);
-        //transform: translateY(3px);
     }
 
 }
 
 // Custome button as needed are following --->>>
-.btn__default {
-    padding: 12px 30px;
-    font-size: 14px;
-    font-weight: 500;
-    color: white !important;
-    background-color: red;
-    text-transform: uppercase;
-    border: none;
-    outline: none;
-    transition: all .3s ease-in-out;
-    border-radius: 6px;
+.btn-sm {
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0;
 }
 
-.btn__default__sm {
-    padding: 8px 18px;
-    font-size: 12px;
-    font-weight: 500;
-    color: white !important;
-    background-color: red;
-    text-transform: uppercase;
-    border: none;
-    outline: none;
-    transition: all .3s ease-in-out;
-    border-radius: 6px;
+// Button Dark
+
+.btn-dark {
+    color: $white;
+    background-color: $light-black;
+    border-color: $light-black;
+    border-radius: 0px !important;
+
+    &:hover {
+        color: $white;
+        background-color: $black;
+        border-color: lighten($light-black, 5%);
+    }
+
+    &:Focus {
+        text-decoration: none;
+    }
+}
+
+.btn-dark:focus,
+.btn-dark.focus {
+    box-shadow: 0 0 0 .2rem rgba(17, 17, 17, 0.5);
+    box-shadow: none;
+}
+
+.btn-dark.disabled,
+.btn-dark:disabled {
+    color: $white;
+    background-color: $light-black;
+    border-color: $light-black;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active,
+.show>.btn-dark.dropdown-toggle {
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.show>.btn-dark.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(17, 17, 17, 0.5);
+}
+
+
+// Button Outline Dark
+.btn-outline-dark {
+    color: $light-black;
+    background-color: transparent;
+    background-image: none;
+    border-color: $light-black;
+
+    &:hover {
+        color: $white;
+        background-color: $light-black;
+        border-color: $light-black;
+    }
+
+    &:focus {
+        color: $white;
+        background: $light-black;
+        text-decoration: none;
+    }
+}
+
+.btn-outline-dark:focus,
+.btn-outline-dark.focus {
+    box-shadow: 0 0 0 .2rem rgba(17, 17, 17, 0.5);
+    box-shadow: none;
+}
+
+.btn-outline-dark.disabled,
+.btn-outline-dark:disabled {
+    color: $light-black;
+    background-color: transparent;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.btn-outline-dark:not(:disabled):not(.disabled).active,
+.show>.btn-outline-dark.dropdown-toggle {
+    color: $white;
+    background-color: $light-black;
+    border-color: $light-black;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus,
+.btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-dark.dropdown-toggle:focus {
+    box-shadow: none;
 }

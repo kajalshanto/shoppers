@@ -4,5 +4,9 @@
     // background: ('/images/banner/hero.jpg');
     @include fullImage;
 
-
+    .hero__title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $light-black;
+    }
 }
