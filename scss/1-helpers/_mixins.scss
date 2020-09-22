@@ -1,0 +1,49 @@
+@mixin sectionPadding($x, $y:0) {
+    padding: $x $y;
+}
+
+//.box { @include sectionPadding(120px, 20px); }
+@mixin fullImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin borderRadius($val: 6px) {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+}
+
+//.box { @include borderRadius(22px); }
+
+@mixin transition3 {
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+@mixin transform($property) {
+    -moz-transform: $property;
+    -webkit-transform: $property;
+    -o-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+//.box { @include transform(rotate(30deg)); }
+
+@mixin flexCenter ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// .box1 {
+//     @include flexCenter(colum);
+// }

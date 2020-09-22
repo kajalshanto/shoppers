@@ -1,0 +1,25 @@
+/* Links Basics */
+a {
+    outline: none;
+    border: none;
+}
+
+a:focused {
+    outline: none;
+    border: none;
+}
+
+a:active {
+    color: red;
+}
+
+button:focus,
+button:active,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn.focus,
+.btn:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}

@@ -1,0 +1,46 @@
+// Custome col divider
+$wrapper_width: 1200px;
+
+@function half_width($width) {
+    @return ($width/2)+px;
+}
+
+@function one_third($width) {
+    @return ($width/3)+px;
+}
+
+@function one_fouth($width) {
+    @return ($width/4)+px;
+}
+
+.half-width {
+    width: half_width($wrapper_width);
+}
+
+.one-third {
+    width: one_third($wrapper_width);
+}
+
+.one-fouth {
+    width: one_fouth($wrapper_width);
+}
+
+// Dynamic path by using function
+$imgUrl: '../images/';
+
+@function bgImg($img) {
+    @return url($imgUrl + $img);
+}
+
+// Dynamicaly change text color using primary color
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return $black;
+    }
+
+    @else {
+        @return $white;
+    }
+}
+
+// .box{ color: set-text-color($primary_color)}

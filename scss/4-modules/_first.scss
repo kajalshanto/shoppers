@@ -1,0 +1,19 @@
+.first {
+    width: 100%;
+    height: 100vh;
+    background-image: bgImg('bg.jpg');
+    @include fullImage;
+
+    .section__title {
+        padding-top: 220px;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+    }
+
+    #{&}__para {
+        font-size: 16px;
+        color: white;
+        font-weight: 400;
+    }
+}
