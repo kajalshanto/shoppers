@@ -5,8 +5,8 @@
 //.box { @include sectionPadding(120px, 20px); }
 @mixin fullImage {
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 @mixin borderRadius($val: 6px) {

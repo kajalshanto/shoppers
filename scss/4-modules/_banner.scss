@@ -1,0 +1,8 @@
+.banner {
+    width: 100%;
+    min-height: 30rem;
+    // background: ('/images/banner/hero.jpg');
+    @include fullImage;
+
+
+}

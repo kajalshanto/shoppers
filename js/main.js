@@ -9,15 +9,15 @@ $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
 });
 
-function openNav() {
-    document.getElementById('navbarSupportedContent').classList.toggle("open");
-}
+// function openNav() {
+//     document.getElementById('navbarSupportedContent').classList.toggle("open");
+// }
 
-function toggleMenu() {
-    document.getElementsByClassName('navbar-toggler')[0].getElementsByTagName('input')[0].checked = !document
-        .getElementsByClassName('navbar-toggler')[0].getElementsByTagName('input')[0].checked;
-    openNav();
-}
+// function toggleMenu() {
+//     document.getElementsByClassName('navbar-toggler')[0].getElementsByTagName('input')[0].checked = !document
+//         .getElementsByClassName('navbar-toggler')[0].getElementsByTagName('input')[0].checked;
+//     openNav();
+// }
 
 // ****************** Hanburger End *******************
 

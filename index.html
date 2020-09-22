@@ -48,58 +48,50 @@
 
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Shoppers</a>
+                <a class="navbar-brand" href="#">Shoppers</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <div class="menu">
-                        <input type="checkbox" onclick="openNav()" />
-                        <span id="span1"></span>
-                        <span id="span2"></span>
-                        <span id="span3"></span>
-                    </div>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link js-scroll-trigger" href="#first" onclick="toggleMenu()">First <span
-                                    class="sr-only">(current)</span></a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#second" onclick="toggleMenu()">Second</a>
+                            <a class="nav-link" href="#">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#third" onclick="toggleMenu()">Third</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#fourth" onclick="toggleMenu()">Fourth</a>
-                        </li>
+
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
+                                Category
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Clothes</a>
+                                <a class="dropdown-item" href="#">Shoes</a>
+                                <a class="dropdown-item" href="#">Watches</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Electronics</a>
                             </div>
-                        </li>  -->
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#!">
-                                <i class="far fa-cart-plus"></i> Cart (2)
+                                <i class="far fa-cart-plus"></i> Cart <small>( 2 )</small>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#!">
-                                <i class="fab fa-facebook-square"></i> (0)
+                                <i class="far fa-heart"></i> <small>( 0 )</small>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -108,23 +100,6 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- <span class="navbar-text">
-                        <div class="social__single d-inline ml-3">
-                            <i class="fab fa-facebook-square"></i>
-                        </div>
-                        <div class="social__single d-inline ml-3">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="social__single d-inline ml-3">
-                            <i class="fab fa-twitter-square"></i>
-                        </div>
-                        <div class="social__single d-inline ml-3">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="social__single d-inline ml-3">
-                            <i class="fal fa-search"></i>
-                        </div>
-                    </span> -->
                 </div>
             </div>
         </nav>
@@ -133,42 +108,51 @@
 
     <!-- Main Start  -->
     <main>
-        <!-- First Section Start  -->
-        <section id="first" class="first">
-            <div class="box1 text-center text-white">
-                <h2 class="section__title">This is Box 1</h2>
-                <p class="first__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quod? Quae
-                    enim facere quibusdam necessitatibus inventore repudiandae iure modi officia.</p>
-            </div>
-        </section>
-        <!--/. First Section Start  -->
+        <div class="container">
+            <!-- First Section Start  -->
+            <section id="first" class="banner pb-2 d-flex align-items-center"
+                style="background: url(images/banner/hero.jpg)">
+                <div class="container">
+                    <div class="row px-4">
+                        <div class="col-lg-6">
+                            <h5 class="text-muted small text-uppercase mb-2">New Inspiration 2020</h5>
+                            <h1 class="h2 text-uppercase mb-3">20% off on new season</h1>
+                            <a class="btn btn-dark" href="shop.html">
+                                Browse collections
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/. First Section Start  -->
 
-        <!-- Second Section Start  -->
-        <section id="second">
-            <div class="box2 d-flex align-items-center justify-content-center text-white"
-                style="background-color: coral; height: 800px;">
-                <h2 class="section__title">This is Box 2</h2>
-            </div>
-        </section>
-        <!--/. Second Section Start  -->
+            <!-- Second Section Start  -->
+            <section id="second">
+                <div class="box2 d-flex align-items-center justify-content-center text-white"
+                    style="background-color: coral; height: 800px;">
+                    <h2 class="section__title">This is Box 2</h2>
+                </div>
+            </section>
+            <!--/. Second Section Start  -->
 
-        <!-- Third Section Start  -->
-        <section id="third">
-            <div class="box3 d-flex align-items-center justify-content-center text-white"
-                style="background-color: crimson; height: 800px;">
-                <h2 class="section__title">This is Box 3</h2>
-            </div>
-        </section>
-        <!--/. Third Section Start  -->
+            <!-- Third Section Start  -->
+            <section id="third">
+                <div class="box3 d-flex align-items-center justify-content-center text-white"
+                    style="background-color: crimson; height: 800px;">
+                    <h2 class="section__title">This is Box 3</h2>
+                </div>
+            </section>
+            <!--/. Third Section Start  -->
 
-        <!-- Fourth Section Start  -->
-        <section id="fourth">
-            <div class="box4 d-flex align-items-center justify-content-center text-white"
-                style="background-color: violet; height: 800px;">
-                <h2 class="section__title">This is Box 4</h2>
-            </div>
-        </section>
-        <!--/. Fourth Section Start  -->
+            <!-- Fourth Section Start  -->
+            <section id="fourth">
+                <div class="box4 d-flex align-items-center justify-content-center text-white"
+                    style="background-color: violet; height: 800px;">
+                    <h2 class="section__title">This is Box 4</h2>
+                </div>
+            </section>
+            <!--/. Fourth Section Start  -->
+        </div>
     </main>
     <!--/. Main Start  -->
 

@@ -1,5 +1,5 @@
 // Custome col divider
-$wrapper_width: 1200px;
+$wrapper_width: 1200;
 
 @function half_width($width) {
     @return ($width/2)+px;
@@ -26,7 +26,7 @@ $wrapper_width: 1200px;
 }
 
 // Dynamic path by using function
-$imgUrl: '../images/';
+$imgUrl: '/images/';
 
 @function bgImg($img) {
     @return url($imgUrl + $img);
