@@ -253,6 +253,69 @@ button:active,
   box-shadow: none !important;
 }
 
+.form-control {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #f1dfb5;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(220, 177, 74, 0.25);
+  box-shadow: inset 0 0 1px #111;
+  border-color: #111;
+}
+
+.form-control::placeholder {
+  color: #adb5bd;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #e9ecef;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+
+select.form-control:focus::-ms-value {
+  color: #495057;
+  background-color: #fff;
+}
+
+select.form-control-lg:not([size]):not([multiple]) {
+  height: calc(2.875rem + 2px);
+}
+
+.form-control-lg {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+
 /*=============== All Layouts CSS as following ===============*/
 /* Pre Loader*/
 .lds-spinner {
@@ -357,6 +420,10 @@ button:active,
   }
 }
 
+.navbar {
+  padding: .75rem 1rem !important;
+}
+
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: .95rem;
   font-weight: 800;
@@ -367,8 +434,49 @@ button:active,
   font-size: .95rem;
 }
 
+.bg-dark {
+  background-color: #111 !important;
+}
+
 main {
-  margin-top: 55px;
+  margin-top: 60px;
+}
+
+.footer__title {
+  font-weight: 700;
+}
+
+.footer-link {
+  font-size: 0.85rem;
+  position: relative;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  padding-left: 0.6rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover::before,
+.footer-link:focus::before {
+  opacity: 1;
+}
+
+.footer-link::before {
+  content: '\2771';
+  display: inline-block;
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #fff;
+  transition: all 0.3s;
+  opacity: 0;
 }
 
 #myBtn {
@@ -634,6 +742,67 @@ main {
 
 .trending__products .product__detail h6 a:hover {
   color: #dc3545;
+}
+
+.svg-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: text-bottom;
+  stroke: currentColor;
+  stroke-width: 3;
+  --layer1: currentColor;
+  --layer2: currentColor;
+  --layer3: currentColor
+;
+}
+
+.svg-icon.svg-icon-light {
+  stroke-width: 2;
+}
+
+.svg-icon.svg-icon-heavy {
+  stroke-width: 4;
+}
+
+.svg-icon-big {
+  width: 48px;
+  height: 48px;
+}
+
+.svg-icon-sm {
+  width: 24px;
+  height: 24px;
+}
+
+.services {
+  padding: 10px 15px;
+}
+
+.service__text {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.newsletter .section__left {
+  text-align: left;
+}
+
+.newsletter .section__left h5 {
+  font-weight: 700;
+}
+
+.newsletter .btn {
+  font-weight: 400;
+  border: 1px solid transparent;
+  font-family: inherit;
+  padding: .375rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 /**************** All Modules CSS ENDS ****************/

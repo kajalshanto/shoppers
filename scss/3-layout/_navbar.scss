@@ -1,5 +1,5 @@
 .navbar {
-    // padding: .85rem 1rem;
+    padding: .75rem 1rem !important;
 
     .navbar-nav {
 
@@ -17,6 +17,10 @@
     }
 }
 
+.bg-dark {
+    background-color: $light-black !important;
+}
+
 main {
-    margin-top: 55px;
+    margin-top: 60px;
 }
