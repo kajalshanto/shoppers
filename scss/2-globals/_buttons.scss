@@ -28,19 +28,23 @@ input[type="button"] {
 
 .btn-dark {
     color: $white;
-    background-color: $light-black;
-    border-color: $light-black;
+    background-color: $font-dark;
+    border-color: $font-dark;
     border-radius: 0px !important;
 
     &:hover {
         color: $white;
         background-color: $black;
-        border-color: lighten($light-black, 5%);
+        border-color: lighten($font-dark, 5%);
     }
 
     &:Focus {
         text-decoration: none;
     }
+}
+
+.btn-dark {
+    color: white;
 }
 
 .btn-dark:focus,
@@ -52,8 +56,8 @@ input[type="button"] {
 .btn-dark.disabled,
 .btn-dark:disabled {
     color: $white;
-    background-color: $light-black;
-    border-color: $light-black;
+    background-color: $font-dark;
+    border-color: $font-dark;
 }
 
 .btn-dark:not(:disabled):not(.disabled):active,
@@ -73,20 +77,20 @@ input[type="button"] {
 
 // Button Outline Dark
 .btn-outline-dark {
-    color: $light-black;
+    color: $font-dark;
     background-color: transparent;
     background-image: none;
-    border-color: $light-black;
+    border-color: $font-dark;
 
     &:hover {
         color: $white;
-        background-color: $light-black;
-        border-color: $light-black;
+        background-color: $font-dark;
+        border-color: $font-dark;
     }
 
     &:focus {
         color: $white;
-        background: $light-black;
+        background: $font-dark;
         text-decoration: none;
     }
 }
@@ -99,7 +103,7 @@ input[type="button"] {
 
 .btn-outline-dark.disabled,
 .btn-outline-dark:disabled {
-    color: $light-black;
+    color: $font-dark;
     background-color: transparent;
 }
 
@@ -107,8 +111,8 @@ input[type="button"] {
 .btn-outline-dark:not(:disabled):not(.disabled).active,
 .show>.btn-outline-dark.dropdown-toggle {
     color: $white;
-    background-color: $light-black;
-    border-color: $light-black;
+    background-color: $font-dark;
+    border-color: $font-dark;
 }
 
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus,

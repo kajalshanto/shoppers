@@ -8,8 +8,8 @@
     .product {
 
         img {
-            -webkit-filter: grayscale(40%);
-            filter: grayscale(40%);
+            -webkit-filter: grayscale(80%);
+            filter: grayscale(80%);
             transition: all 0.3s;
         }
 
@@ -38,7 +38,7 @@
 
         .badge-primary {
             color: $white;
-            background-color: #dcb14a;
+            background-color: $warning;
             text-transform: uppercase;
             letter-spacing: 0.07em;
             border-radius: 0;
@@ -48,7 +48,7 @@
 
         .badge-info {
             color: $white;
-            background-color: #17a2b8;
+            background-color: $info;
             text-transform: uppercase;
             letter-spacing: 0.07em;
             border-radius: 0;
@@ -58,7 +58,7 @@
 
         .badge-danger {
             color: $white;
-            background-color: #dc3545;
+            background-color: $theme-primary;
             text-transform: uppercase;
             letter-spacing: 0.07em;
             border-radius: 0;
@@ -113,7 +113,7 @@
                     transition: all .3s ease;
 
                     &:hover {
-                        color: #dc3545;
+                        color: $black;
                     }
                 }
             }

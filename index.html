@@ -8,7 +8,7 @@
 
     <!-- Meta tags for SEO -->
     <meta name="description" content="Shoppers responsive website">
-    <meta name="keywords" content="HTML, CSS, JavaScript, responsive, kajalshanto">
+    <meta name="keywords" content="HTML, CSS, JavaScript, bootstrap responsive, kajalshanto">
     <meta name="author" content="Hasibul Hasan Shanto">
     <!-- Meta tags for SEO ends-->
 
@@ -48,7 +48,7 @@
 
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#">Shoppers</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -94,8 +94,7 @@
 
     <!-- Main Start  -->
     <main>
-
-        <!-- First Section Start  -->
+        <!-- Banner Section Start  -->
         <div class="container">
             <section id="first" class="banner pb-2 d-flex align-items-center"
                 style="background: url(images/banner/hero.jpg)">
@@ -112,15 +111,17 @@
                 </div>
             </section>
         </div>
-        <!--/. First Section Start  -->
+        <!--/. Banner Section End  -->
 
-        <!-- Second Section Start  -->
+        <!-- Categories Section Start  -->
         <section id="second" class="categories pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="section__title centered">
-                        <p class="small text-muted text-uppercase mb-1">Carefully created collections</p>
-                        <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+                    <div class="col-12">
+                        <div class="section__title centered">
+                            <p class="small text-muted text-uppercase mb-1">Carefully created collections</p>
+                            <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+                        </div>
                     </div>
                 </div>
 
@@ -152,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <!--/. Second Section Start  -->
+        <!--/. Categories Section End  -->
 
         <!--  Modal -->
         <div class="modal fade" id="productView" tabindex="-1" role="dialog" aria-hidden="true">
@@ -166,12 +167,6 @@
                                     href="images/products/product-5.jpg" data-lightbox="productview"
                                     title="Red digital smartwatch">
                                 </a>
-                                <!-- <a class="d-none" href="img/product-5-alt-1.590676e9.jpg" title="Red digital smartwatch"
-                                    data-lightbox="productview">
-                                </a>
-                                <a class="d-none" href="img/product-5-alt-2.bfa04461.jpg" title="Red digital smartwatch"
-                                    data-lightbox="productview">
-                                </a> -->
                             </div>
                             <div class="col-lg-6 modal__right">
                                 <button class="close p-4" type="button" data-dismiss="modal" aria-label="Close">
@@ -235,7 +230,7 @@
         </div>
         <!--/.  Modal -->
 
-        <!-- Third Section Start  -->
+        <!-- Trending Products Section Start  -->
         <section id="third" class="trending__products">
             <div class="container">
                 <div class="row">
@@ -561,9 +556,9 @@
 
             </div>
         </section>
-        <!--/. Third Section Start  -->
+        <!--/. Trending Products Section Start  -->
 
-        <!-- Fourth Section Start  -->
+        <!-- Services Section Start  -->
         <section id="fourth" class="services">
             <div class="container">
                 <div class="services text-center bg-light py-5">
@@ -613,7 +608,7 @@
                 </div>
             </div>
         </section>
-        <!--/. Fourth Section End  -->
+        <!--/. Services Section End  -->
 
         <!-- Newsletter Section Start  -->
         <section id="newsletter" class="newsletter py-5">
@@ -697,17 +692,6 @@
             </div>
         </div>
     </footer>
-    <!-- <footer id="footer">
-        <div class="container">
-            <hr> 
-            <p class="footer__copy text-center">Copyright &copy;
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                <a href="https://shantosblackbox.com/">Shanto's Blackbox</a>
-            </p>
-        </div>
-    </footer> -->
     <!--/. footer end -->
 
     <!-- Scroll To Top  -->
@@ -721,32 +705,28 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.2/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel2.thumbs@0.1.8/dist/owl.carousel2.thumbs.min.js"></script>
+
     <!-- Additional JS -->
     <script src="js/main.js"></script>
-
     <script>
-        // ------------------------------------------------------- //
-        //   Inject SVG Sprite  
-        // ------------------------------------------------------ //
-        function injectSvgSprite(path) {
-
-            var ajax = new XMLHttpRequest();
-            ajax.open("GET", path, true);
-            ajax.send();
-            ajax.onload = function (e) {
-                var div = document.createElement("div");
-                div.className = 'd-none';
-                div.innerHTML = ajax.responseText;
-                document.body.insertBefore(div, document.body.childNodes[0]);
-            }
-        }
-        // this is set to BootstrapTemple website as you cannot 
-        // inject local SVG sprite (using only 'icons/orion-svg-sprite.c2a8f15b.svg' path)
-        // while using file:// protocol
-        // pls don't forget to change to your domain :)
-        injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+        ///////////////// fixed menu on scroll for desktop
+        if ($(window).width() > 992) {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 40) {
+                    $('#navbar_top').addClass("fixed-top");
+                    // add padding top to show content behind navbar
+                    $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+                } else {
+                    $('#navbar_top').removeClass("fixed-top");
+                    // remove padding top from body
+                    $('body').css('padding-top', '0');
+                }
+            });
+        } // end if
     </script>
-
 
 </body>
 

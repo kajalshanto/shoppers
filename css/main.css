@@ -8,16 +8,25 @@
   margin: 0;
 }
 
-.half-width {
-  width: 600px;
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: all .6s ease-in;
 }
 
-.one-third {
-  width: 400px;
-}
-
-.one-fouth {
-  width: 300px;
+#myBtn:hover {
+  background-color: #dc3545;
 }
 
 /* Global SCSS */
@@ -153,6 +162,10 @@ input[type="button"]:focus {
 
 .btn-dark:Focus {
   text-decoration: none;
+}
+
+.btn-dark {
+  color: white;
 }
 
 .btn-dark:focus,
@@ -316,6 +329,19 @@ select.form-control-lg:not([size]):not([multiple]) {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .input-group > .custom-file,
+  .input-group > .custom-select,
+  .input-group > .form-control,
+  .input-group > .form-control-plaintext {
+    position: relative;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+}
+
 /*=============== All Layouts CSS as following ===============*/
 /* Pre Loader*/
 .lds-spinner {
@@ -325,7 +351,7 @@ select.form-control-lg:not([size]):not([multiple]) {
   width: 100%;
   height: 102vh;
   z-index: 5000000000;
-  background-color: #E81921;
+  background-color: #111;
 }
 
 .lds-spinner div {
@@ -348,7 +374,7 @@ select.form-control-lg:not([size]):not([multiple]) {
   width: 6px;
   height: 18px;
   border-radius: 20%;
-  background: #333465;
+  background: #dc3545;
 }
 
 .lds-spinner div:nth-child(1) {
@@ -427,7 +453,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: .95rem;
   font-weight: 800;
-  color: white !important;
+  color: #fff !important;
 }
 
 .navbar .navbar-nav .nav-item .nav-link i {
@@ -436,10 +462,6 @@ select.form-control-lg:not([size]):not([multiple]) {
 
 .bg-dark {
   background-color: #111 !important;
-}
-
-main {
-  margin-top: 60px;
 }
 
 .footer__title {
@@ -451,18 +473,6 @@ main {
   position: relative;
   color: #999;
   transition: all 0.3s;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  padding-left: 0.6rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-link:hover::before,
-.footer-link:focus::before {
-  opacity: 1;
 }
 
 .footer-link::before {
@@ -479,25 +489,16 @@ main {
   opacity: 0;
 }
 
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 15px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #111;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 18px;
-  transition: all .6s ease-in;
+.footer-link:hover,
+.footer-link:focus {
+  padding-left: 0.6rem;
+  color: #fff;
+  text-decoration: none;
 }
 
-#myBtn:hover {
-  background-color: #dc3545;
+.footer-link:hover::before,
+.footer-link:focus::before {
+  opacity: 1;
 }
 
 .bg-cover {
@@ -637,7 +638,7 @@ main {
 }
 
 .categories .category__item__title:hover {
-  color: #b68b23;
+  color: #dc3545;
 }
 
 .trending__products {
@@ -649,7 +650,7 @@ main {
 }
 
 .trending__products .product img {
-  filter: grayscale(40%);
+  filter: grayscale(80%);
   transition: all 0.3s;
 }
 
@@ -741,7 +742,7 @@ main {
 }
 
 .trending__products .product__detail h6 a:hover {
-  color: #dc3545;
+  color: #000;
 }
 
 .svg-icon {
@@ -752,8 +753,7 @@ main {
   stroke-width: 3;
   --layer1: currentColor;
   --layer2: currentColor;
-  --layer3: currentColor
-;
+  --layer3: currentColor;
 }
 
 .svg-icon.svg-icon-light {

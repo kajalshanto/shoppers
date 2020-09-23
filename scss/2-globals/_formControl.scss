@@ -93,3 +93,18 @@ select {
         transition: none
     }
 }
+
+@media screen and (max-width: 767px) {
+
+    .input-group>.custom-file,
+    .input-group>.custom-select,
+    .input-group>.form-control,
+    .input-group>.form-control-plaintext {
+        position: relative;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 0;
+    }
+}

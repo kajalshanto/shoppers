@@ -7,7 +7,7 @@
             .nav-link {
                 font-size: .95rem;
                 font-weight: 800;
-                color: white !important;
+                color: $white !important;
 
                 i {
                     font-size: .95rem;
@@ -18,9 +18,5 @@
 }
 
 .bg-dark {
-    background-color: $light-black !important;
-}
-
-main {
-    margin-top: 60px;
+    background-color: $font-dark !important;
 }

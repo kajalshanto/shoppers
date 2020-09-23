@@ -1,26 +1,19 @@
-// Schemecolor.com --> USPS
 //********************************
 //****** Colors Variables ********
 //********************************
 
-$theme-main: #E81921; //theme colors, icons navbar etc
-$theme-primary: #333465; // text, footer, overlay etc
-$theme-primary-light: #3E407C;
+$theme-main: #111; //theme colors, icons navbar etc
+$theme-primary: #dc3545; // text, footer, overlay etc 
 $theme-grey: #D8D8D8;
 
 // $font-dark: #E41837;
-$font-dark: #333465;
+$font-dark: #111;
+$font-secondary: #343a40;
 $font-light: #6E7580;
 $font-extra-light: #EDEDED;
 $font-ultra-light: #F7F7F7;
 
 $white: #fff;
 $black: #000;
-$light-black: #111;
-
-//********************************
-//******* Fonts Variables ********
-//********************************
-$lg: 4em;
-$lg_title: 2em;
-$sm: 1em;
+$warning: #dcb14a;
+$info: #17a2b8;
