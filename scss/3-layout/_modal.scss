@@ -1,0 +1,101 @@
+.bg-cover {
+    background-size: cover !important;
+}
+
+.bg-center {
+    background-position: center center !important;
+}
+
+.product-view {
+    min-height: 20rem;
+}
+
+.text-muted {
+    font-size: 1rem;
+}
+
+.text-small {
+    font-size: 0.85rem !important;
+    color: $light-black;
+    line-height: 1.5;
+}
+
+.border {
+    border: 1px solid #dee2e6 !important;
+}
+
+.no-select {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.text-gray {
+    color: #aaa !important;
+}
+
+.quantity {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: inherit;
+
+    button {
+        background: none;
+        border: none;
+        width: 1rem;
+        outline: none;
+    }
+
+    input {
+        width: 2rem;
+        text-align: center;
+    }
+}
+
+.form-control {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.shadow-0 {
+    box-shadow: none !important;
+}
+
+.modal__right {
+    .btn {
+        font-weight: 400;
+        border: 1px solid transparent;
+        font-family: inherit;
+        padding: .375rem 1.5rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .small {
+        font-size: 80%;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        min-width: 900px;
+    }
+}

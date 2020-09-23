@@ -61,7 +61,7 @@ p {
     text-align: center;
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 700;
     }
 }
@@ -69,4 +69,14 @@ p {
 .reset-anchor {
     color: inherit;
     transition: all 0.3s;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+h4,
+.h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
